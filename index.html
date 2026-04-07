@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Enquiry Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="form-wrap">
+  <div class="form-header">Sales Enquiry Form</div>
+  <form class="form-body" id="enquiryForm" novalidate>
+
+  
+    <div class="section-title">Customer Information</div>
+    <div class="grid-3">
+
+      <div class="field">
+        <label for="date">Date <span class="req">*</span></label>
+        <input type="date" id="date" name="date">
+      </div>
+
+      <div class="field">
+        <label for="customer_name">Customer Name <span class="req">*</span></label>
+        <input type="text" id="customer_name" name="customer_name">
+      </div>
+
+      <div class="field">
+        <label for="gender">Gender <span class="req">*</span></label>
+        <select id="gender" name="gender">
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="customer_enquiry_date">Customer Enquiry Date <span class="req">*</span></label>
+        <input type="date" id="customer_enquiry_date" name="customer_enquiry_date">
+      </div>
+
+      <div class="field">
+        <label for="phone_no">Phone No <span class="req">*</span></label>
+        <input type="tel" id="phone_no" name="phone_no" maxlength="10">
+      </div>
+
+      <div class="field">
+        <label for="whatsapp_no">WhatsApp No</label>
+        <input type="tel" id="whatsapp_no" name="whatsapp_no" maxlength="10">
+      </div>
+
+      <div class="field">
+        <label for="email_address">Email Address</label>
+        <input type="email" id="email_address" name="email_address">
+      </div>
+
+      <div class="field">
+        <label for="customer_type">Customer Type</label>
+        <select id="customer_type" name="customer_type">
+          <option value="">Select</option>
+          <option>New</option>
+          <option>Existing</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- ───────────── Enquiry Details ───────────── -->
+    <div class="section-title">Enquiry Details</div>
+    <div class="grid-3">
+
+      <div class="field">
+        <label for="enquiry_type">Enquiry Type <span class="req">*</span></label>
+        <select id="enquiry_type" name="enquiry_type">
+          <option value="">Select</option>
+          <option>New Purchase</option>
+          <option>Exchange</option>
+          <option>Test Ride Only</option>
+          <option>Accessories</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="enquiry_source">Enquiry Source <span class="req">*</span></label>
+        <select id="enquiry_source" name="enquiry_source">
+          <option value="">Select</option>
+          <option>Walk-In</option>
+          <option>Phone</option>
+          <option>Website</option>
+          <option>Referral</option>
+          <option>Social Media</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="source_of_information">Source of Information</label>
+        <select id="source_of_information" name="source_of_information">
+          <option value="">Select</option>
+          <option>TV</option>
+          <option>Newspaper</option>
+          <option>Online Ad</option>
+          <option>Hoarding</option>
+          <option>Friend / Family</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="sales_enquiry_status">Sales Enquiry Status</label>
+        <select id="sales_enquiry_status" name="sales_enquiry_status">
+          <option value="">Select</option>
+          <option>Hot</option>
+          <option>Warm</option>
+          <option>Cold</option>
+          <option>Converted</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="test_ride_taken">Test Ride Taken</label>
+        <select id="test_ride_taken" name="test_ride_taken">
+          <option value="">Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="appoinment_date">Appointment Date</label>
+        <input type="date" id="appoinment_date" name="appoinment_date">
+      </div>
+
+      <div class="field">
+        <label for="follow_up_date">Follow Up Date</label>
+        <input type="date" id="follow_up_date" name="follow_up_date">
+      </div>
+
+      <div class="field col-span-2">
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks" name="remarks"></textarea>
+      </div>
+
+    </div>
+
+    <!-- ───────────── Vehicle Details ───────────── -->
+    <div class="section-title">Vehicle Details</div>
+    <div class="grid-3">
+
+      <div class="field">
+        <label for="vehicle_name">Vehicle Name <span class="req">*</span></label>
+        <input type="text" id="vehicle_name" name="vehicle_name">
+      </div>
+
+      <div class="field">
+        <label for="model_name">Model Name <span class="req">*</span></label>
+        <input type="text" id="model_name" name="model_name">
+      </div>
+
+      <div class="field">
+        <label for="model_code">Model Code <span class="req">*</span></label>
+        <input type="text" id="model_code" name="model_code">
+      </div>
+
+    </div>
+
+    <!-- ───────────── Payment Details ───────────── -->
+    <div class="section-title">Payment Details</div>
+    <div class="grid-3">
+
+      <div class="field">
+        <label for="payment_type">Payment Type</label>
+        <select id="payment_type" name="payment_type">
+          <option value="">Select</option>
+          <option>Cash</option>
+          <option>Finance</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="down_payment">Down Payment (₹)</label>
+        <input type="number" id="down_payment" name="down_payment" min="0">
+      </div>
+
+      <div class="field">
+        <label for="emi">EMI (₹)</label>
+        <input type="number" id="emi" name="emi" min="0">
+      </div>
+
+      <div class="field">
+        <label for="tenure">Tenure (months)</label>
+        <input type="number" id="tenure" name="tenure" min="0" max="84">
+      </div>
+
+      <div class="field">
+        <label for="which_finance">Which Finance</label>
+        <input type="text" id="which_finance" name="which_finance">
+      </div>
+
+    </div>
+
+    <!-- ───────────── Address ───────────── -->
+    <div class="section-title">Address</div>
+    <div class="grid-3">
+
+      <div class="field">
+        <label for="address_1">Address 1 <span class="req">*</span></label>
+        <input type="text" id="address_1" name="address_1">
+      </div>
+
+      <div class="field">
+        <label for="address_2">Address 2 <span class="req">*</span></label>
+        <input type="text" id="address_2" name="address_2">
+      </div>
+
+      <div class="field">
+        <label for="address_3">Address 3</label>
+        <input type="text" id="address_3" name="address_3">
+      </div>
+
+      <div class="field">
+        <label for="address_4">Address 4</label>
+        <input type="text" id="address_4" name="address_4">
+      </div>
+
+      <div class="field">
+        <label for="city">City <span class="req">*</span></label>
+        <input type="text" id="city" name="city">
+      </div>
+
+      <div class="field">
+        <label for="district">District <span class="req">*</span></label>
+        <input type="text" id="district" name="district">
+      </div>
+
+      <div class="field">
+        <label for="state">State <span class="req">*</span></label>
+        <input type="text" id="state" name="state">
+      </div>
+
+      <div class="field">
+        <label for="pincode">Pincode <span class="req">*</span></label>
+        <input type="text" id="pincode" name="pincode" maxlength="6">
+      </div>
+
+    </div>
+
+    <!-- ───────────── Exchange Details ───────────── -->
+    <div class="section-title">Exchange Details</div>
+    <div class="grid-3">
+
+      <div class="field">
+        <label for="customer_interested_in_exchange">Interested in Exchange</label>
+        <select id="customer_interested_in_exchange" name="customer_interested_in_exchange">
+          <option value="">Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="exchange_type">Exchange Type</label>
+        <select id="exchange_type" name="exchange_type">
+          <option value="">Select</option>
+          <option>Two Wheeler</option>
+          <option>Four Wheeler</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="vehicle_model_and_make">Vehicle Model &amp; Make</label>
+        <input type="text" id="vehicle_model_and_make" name="vehicle_model_and_make">
+      </div>
+
+      <div class="field">
+        <label for="year_of_manufacturing">Year of Manufacturing</label>
+        <input type="number" id="year_of_manufacturing" name="year_of_manufacturing" min="1990" max="2026" placeholder="YYYY">
+      </div>
+
+      <div class="field">
+        <label for="owner_type">Owner Type</label>
+        <select id="owner_type" name="owner_type">
+          <option value="">Select</option>
+          <option>1st Owner</option>
+          <option>2nd Owner</option>
+          <option>3rd Owner</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="valid_insurance">Valid Insurance</label>
+        <select id="valid_insurance" name="valid_insurance">
+          <option value="">Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="original_rc_available">Original RC Available</label>
+        <select id="original_rc_available" name="original_rc_available">
+          <option value="">Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="customer_expected_exchange_price">Customer Expected Price (₹)</label>
+        <input type="number" id="customer_expected_exchange_price" name="customer_expected_exchange_price" min="0">
+      </div>
+
+      <div class="field">
+        <label for="price_offer_by_dealer">Price Offered by Dealer (₹)</label>
+        <input type="number" id="price_offer_by_dealer" name="price_offer_by_dealer" min="0">
+      </div>
+
+    </div>
+
+    <!-- ───────────── Buttons ───────────── -->
+    <div class="btn-row">
+      <button class="btn" type="reset">Reset</button>
+      <button class="btn btn-primary" type="submit" id="submit_btn">Submit Enquiry</button>
+    </div>
+
+    <div class="form-message" id="formMessage" role="status" aria-live="polite"></div>
+
+  </form>
+</div><!-- /form-wrap -->
+
+<script src="script.js"></script>
+</body>
+</html>
