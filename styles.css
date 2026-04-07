@@ -141,8 +141,8 @@ textarea {
 }
 
 .input-invalid {
-  border-color: var(--danger) !important;
-  background: #fff5f6 !important;
+  border-color: #cfd6de !important;
+  background: var(--surface-soft) !important;
 }
 
 .field-error {
